@@ -1,0 +1,25 @@
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column !important;
+  }
+
+  .app-sidebar {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 100vh;
+  }
+
+  .app-sidebar.sidebar-hidden {
+    display: none !important;
+  }
+
+  .app-main {
+    flex: 1 !important;
+    min-height: 0;
+  }
+
+  .app-main.main-hidden {
+    display: none !important;
+  }
+}
